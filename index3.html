@@ -11,12 +11,76 @@
     //ENTRADA
     const numero = Number(prompt(`Fale um numero:`));
     const numero2 = Number(prompt(`Fale outro numero:`));
+    const operacao = prompt(`Fale a operação que voce deseja realizar`).toUpperCase();
     
 
     //PROCESSAMENTO
-    const total = numero + numero2;
+    let conta
+    let par
+    let positivo
+    let validar
+
+    switch(operacao){
+        case "+":
+            conta = numero + numero2;
+            break;
+
+            case "-":
+            conta = numero - numero2;
+            break;
+
+            case "X":
+            conta = numero * numero2;
+            break;
+
+            case "/":
+            conta = numero / numero2;
+            break;
+
+    }
+
+    par = conta % 2;
+
+    switch(par){
+        case 0:
+        par = "par";
+        break;
+
+        default:
+            par = "impar";
+            break;
+
+    }
+
+    switch(conta >= 0){
+        case true:
+            positivo = "positivo";
+            break;
+
+            default:
+                positivo = "negativo";
+            break;
+
+    }
+
+    validar = Math.ceil(conta);
+
+    switch(validar){
+        case conta:
+            validar = "inteiro";
+            break;
+
+            default:
+                validar = "decimal";
+            break;
+
+    }
 
     
     //SAÍDA
+    alert(`O número é ${conta}
+    ${par}
+    ${positivo}
+    ${validar}`)
 
 </script>
