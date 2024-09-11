@@ -12,14 +12,28 @@
     // ENTRADA
 
     const porte = prompt(`Qual é o porte do seu cão?`).toUpperCase();
-    const idade = prompt(`Qual é a idade do seu cão?`);
+    let idade = prompt(`Qual é a idade do seu cão?`);
     
     // PROCESSAMENTO
     switch(porte){
-        case 
-    }
+        case "PEQUENO":
+            idade = idade * 5;
+            alert(`A idade do seu cao é ${idade} anos caninos`); 
+            break;
 
-    
+            case "MEDIO":
+            idade = idade * 6;
+            alert(`A idade do seu cao é ${idade} anos caninos`); 
+            break;
+
+            case "GRANDE":
+            idade = idade * 7;
+            alert(`A idade do seu cao é ${idade} anos caninos`); 
+            break;
+
+          default:
+            alert("valor invalido!!");
+    }
     // SAÍDA
 
 </script>
