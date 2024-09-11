@@ -13,21 +13,29 @@
     
     //PROCESSAMENTO
     switch (hemisferio) {
-        case sul:
+        case "SUL":
             switch (mes) {
-                case "MARÇO"-"ABRIL"-"MAIO":
+                case "MARÇO":
+                case "ABRIL":
+                case "MAIO":
                     alert("Outono");
                     break;
 
-                    case "JULHO"-"JUNHO"-"AGOSTO":
+                    case "JULHO":
+                    case "JUNHO":
+                    case "AGOSTO":
                     alert("Inverno");
                     break;
 
-                    case "SETEMBRO"-"OUTUBRO"-"NOVEMBRO":
+                    case "SETEMBRO":
+                    case "OUTUBRO":
+                    case "NOVEMBRO":
                     alert("Primavera");
                     break;
 
-                    case "DEZEMBRO"-"JANEIRO"-"FEVEREIRO":
+                    case "DEZEMBRO":
+                    case "JANEIRO":
+                    case "FEVEREIRO":
                     alert("Verão");
                     break;
                 default:
@@ -35,6 +43,37 @@
                     break;
             }
             break;
+        case "NORTE":
+        switch (mes) {
+                case "MARÇO":
+                case "ABRIL":
+                case "MAIO":
+                    alert("Primavera");
+                    break;
+
+                    case "JULHO":
+                    case "JUNHO":
+                    case "AGOSTO":
+                    alert("Verão");
+                    break;
+
+                    case "SETEMBRO":
+                    case "OUTUBRO":
+                    case "NOVEMBRO":
+                    alert("Outono");
+                    break;
+
+                    case "DEZEMBRO":
+                    case "JANEIRO":
+                    case "FEVEREIRO":
+                    alert("Inverno");
+                    break;
+                default:
+                    alert("Valor Invalido!!!")
+                    break;
+        }
+        default:
+            alert("Valor Invalido!!!");
     }
 
     //SAÍDA
